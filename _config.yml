@@ -1,0 +1,261 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Xinca
+# email:
+description: >- # this means to ignore newlines until "baseurl:"
+  Xinca people
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://lameur.github.io/Sequence-4---Website-creation-and-Jewelery-design" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username: Lameur
+
+# Build settings
+theme: minima
+
+# Theme settings
+minimal_mistakes_skin: "neon"
+minima:
+  skin: auto
+
+header_pages:
+  - Location.md
+  - Beliefs.md
+  - Customs.md
+  - Jewelry.md
+  - about.md
+
+#author:
+#name: Adam AUCLAIR
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Lameur"
+
+plugins:
+  - jekyll-spaceship
+  - jekyll-avatar
+  - jekyll-responsive-magick
+  - jekyll-include-cache
+  - jekyll-toc
+  # - jekyll-coffeescript
+  # - jekyll-gist
+  # - jekyll-admin
+  - jekyll-assets
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .
+include:
+  - pages/
+
+source: pages
+
+## Plugins configuration
+
+# _config.yml
+assets:
+  source_maps: true
+  destination: "/assets"
+  compression: true
+  gzip: true
+  defaults:
+    integrity:
+      { css, img, js }: true
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  # --
+  # Assets you wish to always have compiled.
+  #   This can also be combined with raw_precompile which
+  #   copies assets without running through the pipeline
+  #   making them ultra fast.
+  # --
+  precompile:
+    [
+      js,
+      html,
+      css,
+      jpg,
+      jpeg,
+      png,
+      gif,
+      svg,
+      webp,
+      mp4,
+      webm,
+      mp3,
+      ogg,
+      ico,
+      woff,
+      woff2,
+      ttf,
+      eot,
+      otf,
+      json,
+      xml,
+      webmanifest,
+      webapp,
+      appcache,
+      m3u8,
+      m3u,
+      hls,
+      ts,
+      pdf,
+      docx,
+      xlsx,
+      pptx,
+      doc,
+      xls,
+      ppt,
+      zip,
+      gz,
+      bz2,
+      7z,
+      rar,
+      tar,
+      css.map,
+      js.map,
+      html.map,
+      svg.map,
+      webp.map,
+      mp4.map,
+      webm.map,
+      mp3.map,
+      ogg.map,
+      ico.map,
+      woff.map,
+      woff2.map,
+      ttf.map,
+      eot.map,
+      otf.map,
+      json.map,
+      xml.map,
+      webmanifest.map,
+      webapp.map,
+      appcache.map,
+      m3u8.map,
+      m3u.map,
+      hls.map,
+      ts.map,
+      pdf.map,
+      docx.map,
+      xlsx.map,
+      pptx.map,
+      doc.map,
+      xls.map,
+      ppt.map,
+      zip.map,
+      gz.map,
+      bz2.map,
+      7z.map,
+      rar.map,
+      tar.map,
+    ]
+  raw_precompile: []
+  #
+  # --
+  # baseurl: whether or not to append site.baseurl
+  # destination: the folder you store them in on the CDN.
+  # url: the CDN url (fqdn, or w/ identifier).
+  # --
+  cdn:
+    baseurl: true
+    destination: true
+    url: null
+  # --
+  # See lib/jekyll/assets/config.rb
+  #   for a list of defaults
+  # --
+  sources:
+    - _assets/custom
+  plugins:
+    css: { autoprefixer: {} }
+    img: { optim: {} }
+
+responsive:
+  widths: [400, 500, 700, 900]
+  heights: [400, 500, 700, 900]
+  quality: 100
+  format: webp
+  verbose: true
+
+# Where things are
+jekyll-spaceship:
+  # default enabled processors
+  processors:
+    - table-processor
+    - mathjax-processor
+    - plantuml-processor
+    - mermaid-processor
+    - polyfill-processor
+    - emoji-processor
+    - element-processor
+    - media-processor
+  mathjax-processor:
+    src:
+      - https://polyfill.io/v3/polyfill.min.js?features=es6
+      - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+    config:
+      tex:
+        inlineMath:
+          - ["$", "$"]
+          - ['\(', '\)']
+        displayMath:
+          - ["$$", "$$"]
+          - ['\[', '\]']
+      svg:
+        fontCache: "global"
+    optimize: # optimization on building stage to check and add mathjax scripts
+      enabled: true # value `false` for adding to all pages
+      include: [] # include patterns for math expressions checking (regexp)
+      exclude: [] # exclude patterns for math expressions checking (regexp)
+  plantuml-processor:
+    mode: default # mode value 'pre-fetch' for fetching image at building stage
+    css:
+      class: plantuml
+    syntax:
+      code: "plantuml!"
+      custom: ["@startuml", "@enduml"]
+    src: http://www.plantuml.com/plantuml/svg/
+  mermaid-processor:
+    mode: default # mode value 'pre-fetch' for fetching image at building stage
+    css:
+      class: mermaid
+    syntax:
+      code: "mermaid!"
+      custom: ["@startmermaid", "@endmermaid"]
+    config:
+      theme: dark
+    src: https://mermaid.ink/svg/
+  emoji-processor:
+    css:
+      class: emoji
+    src: https://github.githubassets.com/images/icons/emoji/

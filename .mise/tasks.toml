@@ -1,0 +1,53 @@
+#:schema https://github.com/jdx/mise/blob/main/schema/mise-task.json
+
+[lint]
+description = "Lint and tidy the code"
+run = ['precious lint --all', 'precious tidy --all']
+hide = true
+alias = 'l'
+
+[bundle]
+description = 'Bundle'
+run = 'gum spin --show-output --spinner minidot --title "Using bundle..." -- bundle'
+hide = true
+
+["bundle:install"]
+description = 'Install gem dependencies'
+run = 'gum spin --show-output --spinner minidot --title "Installing bundle..." -- bundle install'
+hide = true
+alias = 'bi'
+
+["bundle:update"]
+description = 'Update gem'
+run = 'gum spin --show-output --spinner minidot --title "Updating bundle..." -- bundle update --all'
+hide = true
+alias = 'bu'
+
+[build]
+description = 'Build the website'
+depends = 'bundle:install'
+run = 'gum spin --show-output --spinner minidot --title "Building jekyll site..." -- bundle exec jekyll build'
+alias = 'b'                                                                                                    # `mise run b`
+
+[serve]
+description = 'Serve locally the website'
+depends = ['bundle:install', 'build']
+run = 'gum spin --show-output --spinner minidot --title "Serving jekyll site..." -- bundle exec jekyll server'
+alias = 's'
+
+[dummy]
+description = 'dummy commit'
+run = ['git commit --allow-empty -m "Trigger Build"', 'git push']
+hide = true
+alias = 'gd'
+
+[commit]
+description = 'Commit change'
+run = 'ruby scripts/commit.rb'
+alias = 'gc'
+
+[push]
+description = 'Push change'
+depends = 'commit'
+run = 'git push'
+alias = 'gp'
