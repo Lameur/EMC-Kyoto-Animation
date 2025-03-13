@@ -1,8 +1,3 @@
-
----
-
-#### **_static/victimes.md**
-```markdown
 ---
 layout: default
 title: Victimes

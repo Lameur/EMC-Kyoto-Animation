@@ -69,6 +69,10 @@ collections:
   static:
     output: true
     permalink: /:path/
+  default:
+    output: true
+    permalink: /:path/
+
 
 ## Plugins configuration
 
