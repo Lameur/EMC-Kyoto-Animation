@@ -77,7 +77,6 @@ include:
 
 source: pages
 
-
 collections:
   pages:
     output: true

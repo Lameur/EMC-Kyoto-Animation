@@ -2,7 +2,7 @@
 
 [lint]
 description = "Lint and tidy the code"
-run = ['precious lint --all', 'precious tidy --all']
+run = ['precious tidy --all', 'precious lint --all']
 hide = true
 alias = 'l'
 

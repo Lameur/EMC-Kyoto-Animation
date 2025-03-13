@@ -13,6 +13,7 @@ permalink: /timeline/
 
     ### Note
     Le bâtiment n’avait pas de sprinklers, aggravant les dégâts malgré sa conformité aux normes de 2018.
+
   </div>
 
   <div class="timeline">

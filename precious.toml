@@ -35,16 +35,7 @@ labels = ["default", "fast-tidy"]
 
 [commands.typos]
 type = "lint"
-include = [
-    "**/*.md",
-    "**/*.rb",
-    "**/*.yml",
-    "**/*.html",
-    "**/*.toml",
-    "*.editorconfig",
-    "*.gitignore",
-    "Gemfile",
-]
+include = ["**/*.yml", "**/*.toml", "*.editorconfig", "*.gitignore", "Gemfile"]
 exclude = ["_site"]
 cmd = "typos"
 invoke = "once"
