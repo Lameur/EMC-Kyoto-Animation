@@ -1,7 +1,7 @@
 # EMC-Kyoto-Animation
 
 Deployment :
-[![Deploy Jekyll site to Pages](https://github.com/Lameur/Sequence-4---Website-creation-and-Jewelery-design/actions/workflows/jekyll.yml/badge.svg)](https://github.com/Lameur/Sequence-4---Website-creation-and-Jewelery-design/actions/workflows/jekyll.yml)
+[![Deploy Jekyll site to Pages](https://github.com/Lameur/EMC-Kyoto-Animation/actions/workflows/jekyll.yml/badge.svg)](https://github.com/Lameur/EMC-Kyoto-Animation/actions/workflows/jekyll.yml)
 
 This website also was made for a class project.
 
