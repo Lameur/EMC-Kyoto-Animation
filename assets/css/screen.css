@@ -133,6 +133,16 @@ td {
   background: #2a2a2a; /* Fond gris foncé pour les cellules */
 }
 
+.header-logo {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
 /* Pied de page */
 footer {
   background: #222; /* Gris foncé pour le pied de page */
@@ -142,4 +152,36 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+/* Styles pour la section hero */
+.hero {
+  background: #333;
+  color: #fff;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0056b3;
 }
