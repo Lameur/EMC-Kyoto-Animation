@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: std
 title: Procédures Juridiques
 classes: wide
 permalink: /juridique/

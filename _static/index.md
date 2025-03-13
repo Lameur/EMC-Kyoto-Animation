@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: new
 title: Accueil
 classes: wide
 ---
@@ -22,4 +22,4 @@ Le matin du 18 juillet 2019, vers 10h30, Aoba est entré dans le Studio 1 avec e
 Gravemment brûlé, Aoba a été hospitalisé avant son arrestation le 27 mai 2020. Il a été inculpé de meurtre et d'incendie criminel le 16 décembre 2020. Lors du procès, il a plaidé coupable le 5 septembre 2023, admettant avoir agi par rancune. Le 25 janvier 2024, la Cour de District de Kyoto l'a condamné à mort. Il a fait appel le 26 janvier 2024, mais l'a retiré le 28 janvier 2025, confirmant sa condamnation.
 
 #### Détail Surprenant  
-Le bâtiment, classé comme petit bureau, ne disposait pas de sprinklers ni d'hydrants intérieurs, ce qui a aggravé les dégâts malgré une conformité aux normes lors de l'inspection d'octobre 2018 ([Wikipédia](https://fr.wikipedia.org/wiki/Incendie_criminel_de_Kyoto_Animation)).
+Le bâtiment, classé comme petit bureau, ne disposait pas de sprinklers ni d'hydrants intérieurs, ce qui a aggravé les dégâts malgré une conformité aux normes lors de l'inspection d'octobre 2018.

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: std
 title: Sources
 classes: wide
 permalink: /sources/

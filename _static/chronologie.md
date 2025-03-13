@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: std
 title: Chronologie
 classes: wide
 permalink: /timeline/

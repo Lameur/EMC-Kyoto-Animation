@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: std
 title: Victimes
 classes: wide
 permalink: /victimes/

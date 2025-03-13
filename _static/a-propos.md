@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: std
 title: À Propos
 classes: wide
 permalink: /about/
