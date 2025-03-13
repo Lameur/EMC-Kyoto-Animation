@@ -68,7 +68,7 @@ source: _static
 collections:
   default:
     output: true
-    permalink: /:name/
+    permalink: /:path/
 
 
 ## Plugins configuration
@@ -151,14 +151,14 @@ assets:
   #   for a list of defaults
   # --
   sources:
-    - _assets/custom
+    - assets/
   plugins:
     css: { autoprefixer: {} }
     img: { optim: {} }
 
 responsive:
-  widths: [400, 500, 700, 900]
-  heights: [400, 500, 700, 900]
+  widths: [400, 500, 700, 900, 1000]
+  heights: [400, 500, 700, 900, 1000]
   quality: 100
   format: webp
   verbose: true
