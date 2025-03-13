@@ -1,8 +1,7 @@
 ---
-layout: std
+layout: default
 title: Procédures Juridiques
 classes: wide
-permalink: /juridique/
 ---
 
 ## Procédures Juridiques

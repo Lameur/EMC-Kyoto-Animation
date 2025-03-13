@@ -66,9 +66,6 @@ include:
 source: _static
 
 collections:
-  static:
-    output: true
-    permalink: /:path/
   default:
     output: true
     permalink: /:name/

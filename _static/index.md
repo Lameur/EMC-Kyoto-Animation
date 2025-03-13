@@ -1,5 +1,5 @@
 ---
-layout: new
+layout: home
 title: Accueil
 classes: wide
 ---
