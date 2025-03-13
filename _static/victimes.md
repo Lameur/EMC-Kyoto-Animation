@@ -2,6 +2,7 @@
 layout: default
 title: Victimes
 classes: wide
+permalink: /victimes/
 ---
 
 ## Rendre Hommage aux Victimes

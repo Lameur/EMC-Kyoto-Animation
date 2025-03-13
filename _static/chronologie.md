@@ -2,6 +2,7 @@
 layout: default
 title: Chronologie
 classes: wide
+permalink: /timeline/
 ---
 
 ## Chronologie des Événements

@@ -71,7 +71,7 @@ collections:
     permalink: /:path/
   default:
     output: true
-    permalink: /:name
+    permalink: /:name/
 
 
 ## Plugins configuration

@@ -2,6 +2,7 @@
 layout: default
 title: À Propos
 classes: wide
+permalink: /about/
 ---
 
 ## À Propos de ce Site
