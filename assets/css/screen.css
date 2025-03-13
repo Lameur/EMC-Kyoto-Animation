@@ -3,13 +3,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  color: #222;
+  background: #1a1a1a; /* Fond sombre */
+  color: #e0e0e0; /* Texte clair */
 }
 
 /* En-tête */
 header {
-  background: #333;
-  color: white;
+  background: #222; /* Gris foncé pour l'en-tête */
+  color: #fff; /* Texte blanc */
   padding: 1em;
   text-align: center;
 }
@@ -31,7 +32,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #fff; /* Liens blancs */
   text-decoration: none;
 }
 
@@ -60,13 +61,14 @@ h1 {
   font-weight: 300;
   text-align: center;
   margin-bottom: 1.5em;
+  color: #fff; /* Titres principaux en blanc */
 }
 
 h3 {
   font-size: 1.3em;
   font-weight: 400;
   margin-bottom: 0.7em;
-  color: #444;
+  color: #ccc; /* Titres secondaires en gris clair */
 }
 
 /* Paragraphes */
@@ -88,23 +90,25 @@ p {
 }
 
 .context {
-  background: #fafafa;
+  background: #2a2a2a; /* Fond gris foncé pour le contexte */
   padding: 1.2em;
   border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Ombre sombre */
 }
 
+/* Section chronologique */
 .timeline {
   padding: 1.2em;
 }
 
 /* Diagrammes Mermaid */
 .mermaid {
-  border: 1px dashed #ccc;
+  border: 1px dashed #555; /* Bordure gris foncé */
   padding: 1em;
   border-radius: 5px;
-  background: #fff;
+  background: #333; /* Fond gris foncé pour Mermaid */
   text-align: center;
+  color: #e0e0e0; /* Texte clair */
 }
 
 /* Tableaux */
@@ -115,19 +119,24 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border: 1px solid #444; /* Bordure gris foncé */
   padding: 0.8em;
   text-align: left;
 }
 
 th {
-  background: #f5f5f5;
+  background: #333; /* Fond gris foncé pour les en-têtes */
+  color: #fff; /* Texte blanc */
+}
+
+td {
+  background: #2a2a2a; /* Fond gris foncé pour les cellules */
 }
 
 /* Pied de page */
 footer {
-  background: #333;
-  color: white;
+  background: #222; /* Gris foncé pour le pied de page */
+  color: #fff; /* Texte blanc */
   text-align: center;
   padding: 1em;
   position: relative;
