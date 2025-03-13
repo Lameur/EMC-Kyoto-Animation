@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/screen.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        {% for item in site.header_pages %}
+          {% assign page_item = site.static | where: "path", item | first %}
+          <li><a href="{{ page_item.url | relative_url }}">{{ page_item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  
+  <main class="page {% if page.classes %}{{ page.classes }}{% endif %}">
+    <div class="page-content">
+      {{ content }}
+    </div>
+  </main>
+  
+  <footer>
+    <p>© {{ 'now' | date: '%Y' }} - Créé pour honorer la mémoire des victimes.</p>
+  </footer>
+</body>
+</html>
