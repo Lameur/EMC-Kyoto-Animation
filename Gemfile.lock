@@ -179,6 +179,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc-embedded (1.80.4)
+      sass-embedded (~> 1.80)
     sprockets (2.12.5)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -233,10 +235,11 @@ DEPENDENCIES
   ostruct
   rack
   rake (>= 10.0.0)
+  sassc-embedded
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm
   webrick
 
 BUNDLED WITH
-   2.6.3
+   2.6.6
