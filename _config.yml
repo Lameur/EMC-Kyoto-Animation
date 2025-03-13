@@ -77,6 +77,12 @@ include:
 
 source: pages
 
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
 ## Plugins configuration
 
 # _config.yml
