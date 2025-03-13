@@ -10,4 +10,4 @@ L'attaque criminelle du 18 juillet 2019 a coûté la vie à 36 personnes et bles
 
 La communauté mondiale a réagi avec un soutien massif, collectant plus de 30 millions de dollars via des campagnes au Japon et 5 millions supplémentaires de distributeurs américains pour aider les familles et la reconstruction du studio. Un parc mémorial a été proposé pour honorer les disparus.
 
-En 2024, 109 nouveaux candidats ont rejoint Kyoto Animation, restaurant son effectif d'avant l'attaque, preuve de sa résilience ([Kyodo News](https://english.kyodonews.net/news/2024/07/0526a6a64619-kyoto-animation-marks-5-yrs-since-fatal-arson-attack.html)).
+En 2024, 109 nouveaux candidats ont rejoint Kyoto Animation, restaurant son effectif d'avant l'attaque, preuve de sa résilience.
