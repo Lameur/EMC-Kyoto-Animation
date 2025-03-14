@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/screen.css' | relative_url }}">
 </head>
+
 <body>
   <header>
     <div class="header-logo">
@@ -15,26 +17,27 @@
     <nav>
       <ul>
         {% for item in site.header_pages %}
-          {% assign page_item = site.static | where: "path", item | first %}
-          <li><a href="{{ page_item.url | relative_url }}">{{ page_item.title }}</a></li>
+        {% assign page_item = site.static | where: "path", item | first %}
+        <li><a href="{{ page_item.url | relative_url }}">{{ page_item.title }}</a></li>
         {% endfor %}
       </ul>
     </nav>
   </header>
-  
+
   <main class="home">
     <section class="hero">
       <h2>Bienvenue sur {{ site.title }}</h2>
       <a href="/chronologie" class="btn">Découvrir la chronologie</a>
     </section>
-    
+
     <section class="content">
-      {{ content }}
+      {{ content | toc }}
     </section>
   </main>
-  
+
   <footer>
     <p>© {{ 'now' | date: '%Y' }}.</p>
   </footer>
 </body>
+
 </html>

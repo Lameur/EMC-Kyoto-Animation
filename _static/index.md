@@ -2,6 +2,7 @@
 layout: home
 title: Accueil
 classes: wide
+toc: true
 ---
 
 ### Points Clés
