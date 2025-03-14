@@ -74,87 +74,54 @@ collections:
 ## Plugins configuration
 
 # _config.yml
-assets:
-  source_maps: true
-  destination: "/assets"
-  compression: true
-  gzip: true
-  defaults:
-    integrity:
-      { css, img, js }: true
-  caching:
-    enabled: true
-    path: ".jekyll-cache/assets"
-    type: file
+
+source_maps: true # false on JEKYLL_ENV=production
+destination: "/assets"
+compression: true
+gzip: true
+defaults:
+  js: { integrity: true } # true on JEKYLL_ENV=production
+  css: { integrity: true } # true on JEKYLL_ENV=production
+  img: { integrity: true } # true on JEKYLL_ENV=production
+caching:
+  path: ".jekyll-cache/assets"
+  type: file # Possible values: memory, file
+  enabled: true
   # --
-  # Assets you wish to always have compiled.
-  #   This can also be combined with raw_precompile which
-  #   copies assets without running through the pipeline
-  #   making them ultra fast.
-  # --
-  precompile:
-    [
-      js,
-      html,
-      css,
-      jpg,
-      jpeg,
-      png,
-      gif,
-      svg,
-      webp,
-      webm,
-      ico,
-      woff,
-      woff2,
-      ttf,
-      json,
-      xml,
-      webmanifest,
-      webapp,
-      appcache,
-      ts,
-      zip,
-      gz,
-      css.map,
-      js.map,
-      html.map,
-      svg.map,
-      webp.map,
-      mp4.map,
-      webm.map,
-      mp3.map,
-      ogg.map,
-      ico.map,
-      woff.map,
-      woff2.map,
-      ttf.map,
-      json.map,
-      xml.map,
-      webmanifest.map,
-      webapp.map,
-      appcache.map,
-    ]
-  raw_precompile: []
-  #
-  # --
-  # baseurl: whether or not to append site.baseurl
-  # destination: the folder you store them in on the CDN.
-  # url: the CDN url (fqdn, or w/ identifier).
-  # --
-  cdn:
-    baseurl: true
-    destination: true
-    url: null
-  # --
-  # See lib/jekyll/assets/config.rb
-  #   for a list of defaults
-  # --
-  sources:
-    - assets/
-  plugins:
-    css: { autoprefixer: {} }
-    img: { optim: {} }
+# Assets you wish to always have compiled.
+#   This can also be combined with raw_precompile which
+#   copies assets without running through the pipeline
+#   making them ultra fast.
+# --
+precompile: []
+raw_precompile: []
+
+# --
+# baseurl: whether or not to append site.baseurl
+# destination: the folder you store them in on the CDN.
+# url: the CDN url (fqdn, or w/ identifier).
+# --
+cdn:
+  baseurl: false
+  destination: false
+  url: null
+# --
+# These are all default. No need to add them
+#   Only use this if you have more.
+# --
+sources:
+  - assets/css
+  - assets/fonts
+  - assets/videos
+  - assets/javascript
+  - assets/video
+  - assets/image
+  - assets/img
+  - assets/js
+
+plugins:
+  css: { autoprefixer: {}}
+  img: { optim: {}}
 
 responsive:
   widths: [400, 500, 700, 900, 1000]
