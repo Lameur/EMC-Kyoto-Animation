@@ -14,4 +14,4 @@ classes: wide
 - Incendie de Kyoto Animation : les procureurs demandent la peine de mort | [The Guardian](https://www.theguardian.com/world/2023/dec/07/kyoto-animation-fire-japan-prosecutors-seek-death-penalty-over-blaze-that-killed-36)
 - Kyoto Animation marque 5 ans depuis l'attaque criminelle | [Kyodo News](https://english.kyodonews.net/news/2024/07/0526a6a64619-kyoto-animation-marks-5-yrs-since-fatal-arson-attack.html)
 - L'incendiaire de Kyoto Animation accepte sa condamnation à mort | [Le Matin](https://www.lematin.ch/story/japon-l-incendiaire-de-kyoto-animation-accepte-sa-condamnation-a-mort-103269114)
-- Le TUEUR qui voulait SAUVER l'animation | ![YouTube](https://www.youtube.com/watch?v=wMKugMT-KmY)
+- ![Le TUEUR qui voulait SAUVER l'animation ! - YouTube](https://www.youtube.com/watch?v=wMKugMT-KmY)
