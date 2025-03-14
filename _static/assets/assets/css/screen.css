@@ -1,0 +1,187 @@
+/* Styles généraux pour le corps */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: #1a1a1a; /* Fond sombre */
+  color: #e0e0e0; /* Texte clair */
+}
+
+/* En-tête */
+header {
+  background: #222; /* Gris foncé pour l'en-tête */
+  color: #fff; /* Texte blanc */
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: 300;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+nav a {
+  color: #fff; /* Liens blancs */
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenu principal */
+.page {
+  padding: 2em;
+}
+
+.page.wide {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-content {
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+/* Titres */
+h1 {
+  font-size: 2.2em;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #fff; /* Titres principaux en blanc */
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 0.7em;
+  color: #ccc; /* Titres secondaires en gris clair */
+}
+
+/* Paragraphes */
+p {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+/* Conteneur chronologique */
+.timeline-container {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+.context, .timeline {
+  flex: 1;
+  min-width: 280px;
+}
+
+.context {
+  background: #2a2a2a; /* Fond gris foncé pour le contexte */
+  padding: 1.2em;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); /* Ombre sombre */
+}
+
+/* Section chronologique */
+.timeline {
+  padding: 1.2em;
+}
+
+/* Diagrammes Mermaid */
+.mermaid {
+  border: 1px dashed #555; /* Bordure gris foncé */
+  padding: 1em;
+  border-radius: 5px;
+  background: #333; /* Fond gris foncé pour Mermaid */
+  text-align: center;
+  color: #e0e0e0; /* Texte clair */
+}
+
+/* Tableaux */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+}
+
+th, td {
+  border: 1px solid #444; /* Bordure gris foncé */
+  padding: 0.8em;
+  text-align: left;
+}
+
+th {
+  background: #333; /* Fond gris foncé pour les en-têtes */
+  color: #fff; /* Texte blanc */
+}
+
+td {
+  background: #2a2a2a; /* Fond gris foncé pour les cellules */
+}
+
+.header-logo {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Pied de page */
+footer {
+  background: #222; /* Gris foncé pour le pied de page */
+  color: #fff; /* Texte blanc */
+  text-align: center;
+  padding: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styles pour la section hero */
+.hero {
+  background: #333;
+  color: #fff;
+  padding: 3em 1em;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
