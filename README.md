@@ -19,11 +19,10 @@ First use `mise i` to install the needed tool then you can use `mise r b` to bui
 Downloads [Ruby](https://ruby-lang.org) and use `bundle` then `bundle exec jekyll build` to build
 the website or `bundle exec jekyll server` to serve the website locally.
 
-
-
 ## French fast :
 
-Un site pour documenter et honorer la mémoire de l'attaque criminelle de Kyoto Animation du 18 juillet 2019.
+Un site pour documenter et honorer la mémoire de l'attaque criminelle de Kyoto Animation du 18
+juillet 2019.
 
 ### Installation
 
