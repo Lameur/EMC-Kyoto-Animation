@@ -1,0 +1,19 @@
+{
+    "name": "Jekyll Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/universal",
+    "features": {
+        "ghcr.io/devcontainers-extra/features/mise:1": {},
+        "ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "rebornix.ruby"
+            ]
+        }
+    },
+    "postCreateCommand": "bundle install",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/zsh"
+    }
+}
