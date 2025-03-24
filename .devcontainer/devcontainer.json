@@ -1,15 +1,12 @@
 {
-    "name": "Jekyll Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/universal",
-    "features": {
-        "ghcr.io/devcontainers-extra/features/mise:1": {},
-        "ghcr.io/wxw-matt/devcontainer-features/command_runner:0": {}
+    "name": "Default",
+    "build": {
+        "dockerfile": "Dockerfile"
     },
+    "features": {},
     "customizations": {
         "vscode": {
-            "extensions": [
-                "rebornix.ruby"
-            ]
+            "extensions": [ ]
         }
     },
     "postCreateCommand": "mise install",
