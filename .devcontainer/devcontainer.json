@@ -12,7 +12,7 @@
             ]
         }
     },
-    "postCreateCommand": "bundle install",
+    "postCreateCommand": "mise install",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/zsh"
     }
