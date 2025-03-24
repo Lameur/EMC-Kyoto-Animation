@@ -1,9 +1,9 @@
 {
-    "name": "Default",
+    "name": "Dev",
     "build": {
         "dockerfile": "Dockerfile"
     },
-    "features": {},
+    "features": { },
     "customizations": {
         "vscode": {
             "extensions": [ ]
@@ -12,5 +12,6 @@
     "postCreateCommand": "mise install",
     "settings": {
         "terminal.integrated.shell.linux": "/bin/zsh"
-    }
+    },
+    "forwardPorts": [4000]
 }
