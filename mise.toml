@@ -9,7 +9,7 @@ experimental = false
 PROJECT_NAME = "{{ cwd | basename }}"
 
 [tools]
-ruby = "latest"
+ruby = "3.3"
 'ubi:houseabsolute/omegasort' = 'latest'
 'ubi:houseabsolute/precious' = 'latest'
 taplo = 'latest'
