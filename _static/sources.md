@@ -2,6 +2,7 @@
 layout: page
 title: Sources
 classes: wide
+permalink: /sources/
 ---
 
 ## Sources
