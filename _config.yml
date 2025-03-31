@@ -20,9 +20,9 @@
 
 title: Mémoire de l'attaque criminelle de Kyoto Animation
 # email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Une analyse complète des événements, impacts et conséquences de l'attaque criminelle tragique
-  contre Kyoto Animation en 2019.
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Une analyse complète des événements, impacts et conséquences de l'attaque criminelle tragique
+#   contre Kyoto Animation en 2019.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://lameur.github.io/EMC-Kyoto-Animation/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Lameur
