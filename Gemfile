@@ -10,7 +10,7 @@ source "https://rubygems.org"
 gem "jekyll"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
-#gem "minima"
+gem "minima"
 gem "minimal-mistakes-jekyll", git: 'https://github.com/mmistakes/minimal-mistakes.git'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -18,7 +18,7 @@ gem "minimal-mistakes-jekyll", git: 'https://github.com/mmistakes/minimal-mistak
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-spaceship'
+  gem 'jekyll-spaceship', '>= 0.10'
   gem "jekyll-avatar"
   gem "jekyll-include-cache"
   gem "jekyll-responsive-magick"
@@ -27,7 +27,7 @@ group :jekyll_plugins do
   gem "github-pages-unscramble"
 end
 
-gem "sassc-embedded"
+# gem "sassc-embedded"
 gem "fiddle"
 gem "ostruct"
 gem "faraday-retry"
@@ -50,4 +50,5 @@ gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "base64", "~> 0.2.0"
+gem "base64"
+gem "benchmark"
